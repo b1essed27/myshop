@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Оформление заказа</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+<a href="index.html" id="logo">👕 MyShop</a>
+  </header>
+
+  <main style="padding: 20px;">
+    <h2>Оформление заказа</h2>
+
+    <div id="checkout-items"></div>
+    <p><strong>Итого: <span id="checkout-total">0</span> ₸</strong></p>
+    <a href="checkout.html"><button>Оформить заказ</button></a>
+
+    <div id="checkout-form">
+      <input type="text" id="name" placeholder="Ваше имя" required />
+      <input type="text" id="phone" placeholder="Телефон" required />
+      <button onclick="confirmOrder()">Подтвердить заказ</button>
+    </div>
+
+    <p id="thank-you" style="display:none; color: green;">✅ Спасибо за заказ! Мы свяжемся с вами.</p>
+  </main>
+
+  <script src="checkout.js"></script>
+</body>
+</html>
